@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Coding Quiz Challenge</title>
 </head>
 <body>
-    <script type="text/javascript" src="./assets/js/script.js"></script>
-    
+    <div class="highscores"><a href="#">View Scores</a></div>
+
+    <div class="timer">Time: <span id="time">0</span></div>
+
+    <div class="container">
+        <!-- start game container -->
+        <div class="start" id="start">
+            <h1>title of quiz goes here</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nulla, debitis omnis necessitatibus nihil dolorem maiores nam doloremque dignissimos odio deserunt, aut blanditiis. Minus voluptate consectetur dolore! Possimus, repellendus magnam.</p>
+            <button id="start">Start Quiz</button>
+        </div>
+        <!-- question container -->
+
+        <div id="questions" class="hide">
+            <h2 id="title"></h2>
+            <div class="choices" id="choices"></div>
+        </div>
+
+        <!-- end game container -->
+        <div class="hide" id="end">
+            <h2>Game Over</h2>
+            <p>Your score is <span id="final-score"></span>.</p>
+            <p>Enter initials: <input type="text" id="initials">
+            <button id="submit">Submit</button>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./questions.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
